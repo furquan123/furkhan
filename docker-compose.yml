@@ -1,0 +1,16 @@
+version: '3'
+services:
+  airlines:
+    image: fk23/paytmairlines:v1
+    ports: 
+      - "8000:80"
+
+  metro:
+    image: fk23/paytmmetro:v1
+    ports: 
+      - "8001:80"
+  
+  train: 
+    image: fk23/paytmtrain:v1
+    ports: 
+      - "8002:80"    
